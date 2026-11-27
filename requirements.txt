@@ -1,0 +1,4 @@
+# vesync-mcp runtime dependencies
+mcp>=1.2.0
+requests>=2.31
+pyvesync>=3.0

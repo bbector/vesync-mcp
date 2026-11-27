@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vesync": {
+      "command": "vesync-mcp",
+      "args": []
+    }
+  }
+}

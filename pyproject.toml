@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vesync-mcp"
+version = "0.1.0"
+description = "Model Context Protocol server for VeSync / Etekcity body scales (read your weigh-ins)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["mcp", "vesync", "etekcity", "scale", "weight", "health", "claude"]
+dependencies = [
+    "mcp>=1.2.0",
+    "requests>=2.31",
+    "pyvesync>=3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/vesync-mcp"
+Issues = "https://github.com/USERNAME/vesync-mcp/issues"
+
+[project.scripts]
+vesync-mcp = "vesync_mcp.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vesync_mcp*"]
